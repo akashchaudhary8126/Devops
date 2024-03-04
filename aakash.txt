@@ -1,0 +1,7 @@
+
+iver> wait =
+			        new FluentWait<>(driver)
+			            .withTimeout(Duration.ofSeconds(2))
+			            .pollingEvery(Duration.ofMillis(300))
+			            .ignoring(ElementNotInteractableException.class);
+		// polling time: 1 sec default
